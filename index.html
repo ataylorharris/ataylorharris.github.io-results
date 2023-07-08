@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport", content="width=device-width", initial-scale=1>
+
+
+
+
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #results {
+    background-color:hsl(241, 81%, 54%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 340px;
+    width: 260px;
+    border-radius: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+
+button {
+    border-radius: 29px;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    height: 50px;
+    width: 230px;
+    margin-left: -5px;
+    font-weight:bold;
+}
+button:hover {
+  background-color: hsla(256, 72%, 46%, 1);
+}
+.Summary {
+margin-left: 310px;
+margin-top: -350px;
+
+height: 340px;
+width: 200px;
+
+border-radius: 30px;
+}
+body {
+    background-color: hsl(221, 100%, 96%);
+   font-family:HankenGrotesk;
+    overflow-x: hidden;
+
+    
+
+
+}
+
+#reaction {
+    background-color:  hsl(0, 100%, 67%, .1);
+    border-radius: 5px;
+   height: 30px;
+   width: 220px;
+}
+#memory {
+    background-color:  hsl(39, 100%, 56%,.1);
+    border-radius: 5px;
+    height: 30px;
+    width: 220px;
+   
+
+}
+#verbal {
+    background-color: hsl(166, 100%, 37%,.1);
+    border-radius: 5px;
+    height: 30px;
+    width: 220px;
+
+}
+#visual {
+    background-color:  hsl(234, 85%, 45%,.1);
+    border-radius: 5px;
+    height: 30px;
+    width: 220px;
+
+}
+#box {
+    background-color: rgb(255, 254, 254);
+    border-radius: 20px;
+    width: 600px;
+    margin-left: 400px;
+    margin-top: 100px;
+    
+    
+}
+.main {
+color: hsl(0, 0%, 100%);
+font-size: 60px;
+margin-bottom: 10px;
+justify-content: center;
+text-align: center;
+
+}
+
+.other {
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(256, 72%, 46%, 1);
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    margin-left: 66px;
+    text-align: center;
+   
+}
+@media only screen and (max-width: 800px) {
+  .Summary{
+    
+    margin-top: -10px;
+    margin-left: 5px;
+  
+    width: 100%;
+    height: 100%;
+    
+    
+
+    
+  }
+  #box {
+   
+   width: 100%;
+   padding: 0;
+   height: 100%;
+  }
+  #results {
+   width: 100%;
+   overflow-x: hidden;
+ 
+    
+  }
+  #reaction {
+    width: 96%;
+  }
+  #memory{
+    width: 96%;
+  }
+  #verbal {
+    width: 96%;
+  }
+  #visual {
+    width: 96%;
+  }
+  button {
+    
+    margin-left: 15px;
+
+    width: 90%;
+   
+  
+  }
+  .other {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+ 
+  body {
+    overflow-x: hidden;
+   
+    position: absolute;
+    padding: 0px;
+   
+     margin: 0px;
+     margin-left: -398px;
+     width: 100%;
+    height: 100%;
+   font-family: Arial, Helvetica, sans-serif;   
+  }
+ 
+}
+
+  
+
+p {
+    color: rgb(255, 255, 255);
+}
+  </style>
+</head>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+<link rel="stylesheet" type="text/css" href="design.css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<link rel="stylesheet" ,href="styleslocation/style.css">
+
+<body>
+ 
+<div id = "box">
+<div id = "results">
+  <span style="opacity:60%"><b>Your Result</b></span><br>
+  <div class = "other">
+ <div class = "main" >76</div>of 100
+</div>
+
+
+ <p>
+<b><div style="font-size: 18px">Great</div></b> 
+ 
+  <br>
+  You scored higher than 65% of <br> the people who have taken <br> these tests.</p> 
+  </div>
+</p>
+  <div class = "Summary">
+  <div><b>Summary</b></div>
+  <br>
+  <br>
+
+<div id = "reaction" >
+  <img src="icon-reaction.svg" alt="">
+ <span style="color:hsl(0, 100%, 67%)" ><b>Reaction</b></span>
+ <span style="float:right" ><b>80</b>/100</span>
+</div>
+<br>
+<div id = "memory"> 
+  <img src="icon-memory.svg" alt="">
+ <b> <span style="color:hsl(39, 100%, 56%)"><b>Memory</b></span>
+  <span style="float:right"><b>92 </b>/ 100</b></span>
+</div>
+<br>
+ 
+<div id = "verbal">
+  <img src="icon-verbal.svg" alt=""><b> <span style="color:hsl(166, 100%, 37%)"><b>Verbal</b></span>
+   <span style="float:right"><b>61</b> / 100</b></span> 
+</div>
+ <br>
+<div id = "visual"> 
+  <img src="icon-visual.svg" alt="">
+ <b></b> <span style="color:hsl(234, 85%, 45%)"><b>Visual</b></span>
+ <span style="float:right"><b>72</b> / 100</div></span> 
+  <br>
+  <br>
+ 
+  <button>Continue</button>
+ </div>
+
+  
+  
+  <div class="attribution">
+    
+  </div>
+  </div>
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alicia Harris</a>.
+</body>
+</html>
